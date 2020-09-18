@@ -44,13 +44,14 @@ addBudgetForm.addEventListener('submit', (event) => {
 //renderAllExpenses
 const renderAllExpenses = () => {
   const expenseHtmlArr = expenses.map(({ desc, expenseAmt, date }) => {
-    return `      <div class="expense">
-                  <span class="expense-desc">${desc}</span>
-                  <span class="expense-amount">${expenseAmt}</span>
-                  <i class="far fa-trash-alt"  onclick="deleteExpense(${date})"></i>
-                </div>
+    return `<div class="expense">
+                <span class="expense-desc">${desc}</span>
+                <span class="expense-amount">${expenseAmt}</span>
+                <i class="far fa-trash-alt"  onclick="deleteExpense(${date})"></i>
+            </div>
                   `;
   });
+  console.log(expenseHtmlArr);
   const expenseHtml = expenseHtmlArr.join('');
   allExpenses.innerHTML = expenseHtml;
 };

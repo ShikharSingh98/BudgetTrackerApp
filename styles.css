@@ -3,11 +3,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #1d3557;
 }
 
 .heading {
   font-family: 'Ranchers', cursive;
-  font-size: 4rem;
+  font-size: 3rem;
+  color: #e63946;
 }
 
 .container {
@@ -15,13 +17,13 @@ body {
   flex-direction: column;
   align-items: center;
   width: 80%;
+  border: 2px solid #1d3557;
 }
 
 #add-budget-form {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .input {
@@ -29,8 +31,8 @@ body {
   font-size: 1.2rem;
   outline: none;
   border: none;
-  border: 1.8px solid black;
   border-radius: 5px;
+  padding: 0.5rem 0.3rem;
 }
 
 .add-budget-button {
@@ -47,10 +49,10 @@ body {
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  margin: 2rem;
+  margin: 2rem 0;
 }
 
 .card {
@@ -58,26 +60,38 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 300px;
+  width: 250px;
   height: 100px;
   font-family: 'Open Sans', sans-serif;
-  border: 1px solid blueviolet;
+  background-color: #a8dadc;
+  border-radius: 10px;
 }
 
 .card-title {
   font-size: 1.3rem;
 }
 
+.card-text {
+  font-size: 1.5rem;
+}
+#expense-text {
+  color: #e63946;
+}
+#balance-text {
+  color: green;
+}
 .add-expense-container {
   width: 100%;
   font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #add-expense-form {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -96,11 +110,64 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 3rem;
 }
 
 .expense {
+  font-family: 'Open Sans', sans-serif;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
-  border: 1px solid violet;
+  border: 2px solid #1d3557;
+  margin-top: 1rem;
+  background-color: white;
+  padding: 1rem 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+}
+
+.fa-trash-alt {
+  color: red;
+  font-size: 1.2rem;
+}
+
+.expense-desc {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.expense-amount {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 800px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+  .input {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    width: 300px;
+    height: 100px;
+  }
+  .card:nth-child(2) {
+    margin: 2rem 0;
+  }
+  #add-budget-form {
+    flex-direction: column;
+  }
+  #add-expense-form {
+    flex-direction: column;
+  }
 }

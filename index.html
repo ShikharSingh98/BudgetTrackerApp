@@ -29,6 +29,7 @@
           id="add-budget"
           class="input"
           placeholder="Enter Budget"
+          required
         />
         <button type="submit" class="add-budget-button">Add Budget</button>
       </form>
@@ -48,23 +49,29 @@
       </div>
       <div class="add-expense-container">
         <form id="add-expense-form">
-          <div>
+          <div class="button-container">
             <input
               type="text"
               id="expense-desc"
               class="input"
               placeholder="Enter Expense"
+              required
             />
           </div>
-          <div>
+          <div class="button-container">
             <input
               type="number"
               id="expense-amount"
               class="input"
               placeholder="Enter Expense Amount"
+              required
             />
           </div>
-          <button type="submit" class="add-expense-button">Add Expense</button>
+          <div class="button-container">
+            <button type="submit" class="add-expense-button">
+              Add Expense
+            </button>
+          </div>
         </form>
         <div id="all-expenses"></div>
       </div>
