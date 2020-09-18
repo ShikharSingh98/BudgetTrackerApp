@@ -1,0 +1,104 @@
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-family: 'Ranchers', cursive;
+  font-size: 4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.add-budget-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.input {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.add-budget-button {
+  background-color: #457b9d;
+  color: white;
+  border: none;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid blueviolet;
+}
+
+.card-title {
+  font-size: 1.3rem;
+}
+
+.add-expense-container {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.add-expense-form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.add-expense-button {
+  background-color: #457b9d;
+  color: white;
+  border: none;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.all-expenses {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.expense {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}

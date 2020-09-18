@@ -4,14 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Budget Tracker App</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="container">
+      <h1 class="heading">BUDGET TRACKER APP</h1>
       <form class="add-budget-form">
-        <label for="add-budget">Budget</label>
-        <input type="number" id="add-budget" />
-        <button type="submit">Add Budget</button>
+        <input
+          type="number"
+          id="add-budget"
+          class="input"
+          placeholder="Enter Budget"
+        />
+        <button type="submit" class="add-budget-button">Add Budget</button>
       </form>
       <div class="cards">
         <div class="card">
@@ -30,16 +43,29 @@
       <div class="add-expense-container">
         <form class="add-expense-form">
           <div>
-            <label for="add-expense-desc">Expense Description</label>
-            <input type="text" id="add-expense-desc" />
+            <input
+              type="text"
+              id="expense-desc"
+              class="input"
+              placeholder="Enter Expense"
+            />
           </div>
           <div>
-            <label for="add-expense-amount">Expense Amount</label>
-            <input type="text" id="add-expense-amount" />
+            <input
+              type="number"
+              id="add-expense-amount"
+              class="input"
+              placeholder="Enter Expense Amount"
+            />
           </div>
-          <button type="submit">Add Expense</button>
+          <button type="submit" class="add-expense-button">Add Expense</button>
         </form>
         <div class="all-expenses">
+          <div class="expense">
+            <span class="expense-desc">Expense Description</span>
+            <span class="expense-edit-button">Edit Button</span>
+            <span class="expense-delete-button">Delete button</span>
+          </div>
           <div class="expense">
             <span class="expense-desc">Expense Description</span>
             <span class="expense-edit-button">Edit Button</span>
